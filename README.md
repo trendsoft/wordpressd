@@ -1,6 +1,6 @@
-# WordPress
+# Wordpress
 
-> WordPress运行环境
+> Wordpress运行环境
 
 ## 使用
 
