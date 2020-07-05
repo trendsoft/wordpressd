@@ -1,6 +1,6 @@
 FROM php:7.4.7-apache
 
-RUN apt-get update && apt-get install -y libzip-dev libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libpng-dev libc-client-dev libkrb5-dev \
+RUN apt-get update && apt-get install -y libzip-dev libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libpng-dev libc-client-dev libkrb5-dev imap-dev openssl-dev \
 && rm -r /var/lib/apt/lists/* \
 && docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
 && pecl install mcrypt-1.0.3 redis xdebug \
