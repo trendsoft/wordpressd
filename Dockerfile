@@ -1,4 +1,4 @@
-FROM php:8.5-rc-apache
+FROM php:8.5.4-apache
 
 RUN apt update && apt install -y libzip-dev zlib1g-dev libpng-dev libmagickwand-dev cron supervisor \
 && rm -rf /var/lib/apt/lists/*
